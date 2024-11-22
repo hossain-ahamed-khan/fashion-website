@@ -33,11 +33,11 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#646464]">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#F5F3FF]">
                             {navLinks}
                         </ul>
                     </div>
-                    <div className='ml-10'>
+                    <div className='ml-1 lg:ml-10'>
                         <Image
                             src={logo}
                             width={100}
@@ -53,17 +53,23 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end text-[#1D1D1D] text-sm font-normal">
 
-                    <div className='flex w-52 bg-[#FFFFFF] items-center p-2 rounded-3xl'>
-                        <input type="text" />
-                        <CiSearch className='text-xl mx-2' />
-                        Search
+                    <div className='bg-[#FFFFFF] py-2 pl-2 rounded-l-3xl invisible lg:visible'>
+                        <CiSearch className='text-xl' />
+                    </div>
+                    <div className='invisible lg:visible'>
+                        <input type="text" className='w-52 right-2 text-[#1D1D1D] bg-[#FFFFFF] p-2 rounded-r-3xl focus:outline-none' placeholder='Search' />
                     </div>
 
-                    <div>
-                        <LiaShoppingBagSolid className='mx-6 text-xl' />
+                    <div className='visible lg:invisible'>
+                        <CiSearch className='text-2xl' />
+                    </div>
+
+                    <div className='relative'>
+                        <LiaShoppingBagSolid className='mx-6 text-2xl' />
+                        <span className="absolute right-5 top-0 text-xs text-[#FFFFFF] px-1 bg-[#1E1E1E] rounded-full">0</span>
                     </div>
                     <div>
-                        <FaRegUser className='mr-10 text-xl' />
+                        <FaRegUser className='mr-10 text-2xl' />
                     </div>
                 </div>
             </div>
