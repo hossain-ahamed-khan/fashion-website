@@ -7,5 +7,7 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 } satisfies Config;

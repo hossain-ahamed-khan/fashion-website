@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
-import { Roboto } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Shared/Navbar";
+import Footer from "@/components/Shared/Footer";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -14,8 +16,8 @@ import "./globals.css";
 //   weight: "100 900",
 // });
 
-const roboto_font = Roboto({
-  weight: ['100', '300', '400', '500', '700', '900'],
+const font = Manrope({
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
   subsets: ['latin']
 })
 
@@ -32,9 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto_font.className} antialiased`}
+        className={`${font.className} antialiased`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
