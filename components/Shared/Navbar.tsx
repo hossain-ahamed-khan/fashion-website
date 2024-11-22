@@ -1,4 +1,15 @@
-import React from 'react';
+import Image from 'next/image';
+import logo from '../../public/images/logo.png';
+import { CiSearch } from 'react-icons/ci';
+import { LiaShoppingBagSolid } from 'react-icons/lia';
+import { FaRegUser } from 'react-icons/fa';
+
+const navLinks = <>
+    <li><a className='hover:text-[#581FC1]'>Home</a></li>
+    <li><a className='hover:text-[#581FC1]'>Shop</a></li>
+    <li><a className='hover:text-[#581FC1]'>Deals</a></li>
+    <li><a className='hover:text-[#581FC1]'>What's New</a></li>
+</>
 
 const Navbar = () => {
     return (
@@ -22,37 +33,38 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#646464]">
+                            {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <div className='ml-10'>
+                        <Image
+                            src={logo}
+                            width={100}
+                            height={50}
+                            alt="Picture of the author"
+                        />
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
+                    <ul className="menu menu-horizontal px-1 text-[#646464] font-semibold">
+                        {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end text-[#1D1D1D] text-sm font-normal">
+
+                    <div className='flex w-52 bg-[#FFFFFF] items-center p-2 rounded-3xl'>
+                        <input type="text" />
+                        <CiSearch className='text-xl mx-2' />
+                        Search
+                    </div>
+
+                    <div>
+                        <LiaShoppingBagSolid className='mx-6 text-xl' />
+                    </div>
+                    <div>
+                        <FaRegUser className='mr-10 text-xl' />
+                    </div>
                 </div>
             </div>
         </div>
