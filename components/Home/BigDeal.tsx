@@ -3,7 +3,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const BigDeal = () => {
     return (
-        <div className='bg-[#F4F8FF]'>
+        <div className='bg-[#F4F8FF] py-10'>
             <div className='w-11/12 mx-auto bg-[#EEECFB] flex-none md:flex justify-between px-20 pt-5 space-y-5 md:space-y-0'>
                 <div className='w-full md:w-2/3 mx-auto flex flex-col justify-center space-y-3 text-center md:text-left'>
                     <p className='text-[#6F42C1] text-2xl font-semibold'>Big Deal</p>
@@ -18,7 +18,7 @@ const BigDeal = () => {
                         src="https://i.ibb.co.com/PNqfbdS/models.png"
                         width={400}
                         height={500}
-                        alt="Picture of the car"
+                        alt="Pictur of models"
                     />
                 </div>
             </div>
