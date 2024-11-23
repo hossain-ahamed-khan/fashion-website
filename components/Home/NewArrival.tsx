@@ -3,6 +3,7 @@ import NewProductCard from '../Shared/NewProductCard';
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 const NewArrival = () => {
+
     return (
         <div className='bg-[#F4F8FF]'>
             <div className='w-11/12 mx-auto pt-16'>
