@@ -15,11 +15,12 @@ const NewProductCard = ({ newProduct }) => {
                         style={{ width: '100%', height: 'auto' }}
                         alt='new arrival product image' />
                 </figure>
-                <div className="card-body">
-                    <h2 className="card-title">
-                        {name}
-                    </h2>
-                    <p>{price}</p>
+                <div className="text-black flex p-6 justify-between">
+                    <h2 className='text-lg font-normal'>{name}</h2>
+                    <p className='text-xl font-semibold'>BDT {price}</p>
+                </div>
+                <div className='px-3 pb-3'>
+                    <button className='btn btn-outline w-full text-[#7E53D4] text-lg font-semibold border-2'>Add to Cart</button>
                 </div>
             </div>
         </div>
