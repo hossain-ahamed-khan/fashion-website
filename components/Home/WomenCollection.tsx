@@ -4,7 +4,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const WomenCollection = () => {
     return (
-        <div className='bg-[#F4F8FF] h-[580px] visible md:invisible'>
+        <div className='bg-[#F4F8FF] h-[580px] visible md:hidden'>
             <div className="w-11/12 mx-auto h-[490px] flex-none md:flex justify-center items-center">
                 <div className="relative w-full md:w-1/2 mx-auto flex justify-center">
                     <div className="absolute bottom-0 w-full h-[400px] bg-[#EEECFB]"></div>

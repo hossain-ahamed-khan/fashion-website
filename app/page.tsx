@@ -3,6 +3,7 @@ import Hero from '../components/Home/Hero';
 import NewArrival from '../components/Home/NewArrival';
 import MenCollection from '../components/Home/MenCollection';
 import WomenCollection from '@/components/Home/WomenCollection';
+import AllProducts from '@/components/Home/AllProducts';
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <BigDeal />
       <MenCollection />
       <WomenCollection />
+      <AllProducts />
     </div>
   );
 };
