@@ -25,7 +25,7 @@ const NewArrival = () => {
                 </div>
             </div>
             <div className='w-11/12 mx-auto py-8'>
-                <button className='w-full btn rounded-xl bg-[#7E53D4] text-white hover:bg-[#6329d6]'>See more</button>
+                <button className='w-full btn rounded-xl bg-[#7E53D4] text-white hover:bg-[#6329d6] border-none'>See more</button>
             </div>
         </div>
     );
