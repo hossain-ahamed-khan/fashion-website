@@ -40,8 +40,8 @@ const Navbar = () => {
                     <div className='ml-1 lg:ml-10'>
                         <Image
                             src={logo}
-                            width={100}
-                            height={50}
+                            width={120}
+                            height={60}
                             alt="Picture of the author"
                         />
                     </div>

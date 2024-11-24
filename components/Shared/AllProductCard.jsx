@@ -14,6 +14,16 @@ const AllProductCard = ({ Product }) => {
                         style={{ width: '100%', height: 'auto' }}
                         alt='new arrival product image' />
                 </figure>
+                <div className="flex text-black space-x-2 px-4">
+                    <div className="rating">
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-[#FFC700]" />
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-[#FFC700]" defaultChecked />
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-[#FFC700]" />
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-[#FFC700]" />
+                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-[#FFC700]" />
+                    </div>
+                    <p>({numberOfRating})</p>
+                </div>
                 <div className="text-black flex p-6 justify-between">
                     <h2 className='text-lg font-normal'>{name}</h2>
                     <p className='text-xl font-semibold'>BDT {price}</p>
