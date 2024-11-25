@@ -1,15 +1,13 @@
-import NewProductCard from '../Shared/NewProductCard';
+import NewProductCard from '../../components/Shared/NewProductCard';
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
-const NewArrival = () => {
-
+const RelativeProduct = () => {
     return (
         <div className='bg-[#F4F8FF]'>
             <div className='w-11/12 mx-auto pt-16'>
                 <div className='flex justify-between'>
                     <div>
-                        <p className='text-[#7E53D4] text-xl font-normal pb-2'>FEATURED PRODUCT</p>
-                        <h1 className='text-black text-3xl font-bold pb-6'>New Arrivals</h1>
+                        <p className='text-black text-2xl font-bold pb-2'>Related Products</p>
                     </div>
                     <div className='space-x-2 mr-10'>
                         <button className='btn btn-outline text-3xl text-[#7E53D4] rounded-full'><GoArrowLeft /></button>
@@ -19,7 +17,7 @@ const NewArrival = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                     {
-                        newProducts.map(newProduct => <NewProductCard key={newProduct.id} newProduct={newProduct}></NewProductCard>)
+                        relativeProducts.map(newProduct => <NewProductCard key={newProduct.id} newProduct={newProduct}></NewProductCard>)
                     }
                 </div>
             </div>
@@ -30,10 +28,10 @@ const NewArrival = () => {
     );
 };
 
-export default NewArrival;
+export default RelativeProduct;
 
 
-const newProducts = [
+const relativeProducts = [
     {
         id: 1,
         name: "Indian Sharee",

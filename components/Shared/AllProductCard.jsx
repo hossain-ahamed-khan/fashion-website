@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AllProductCard = ({ Product }) => {
-    const { id, name, image, price, rating, numberOfRating } = Product;
+    const { id, name, image, price, numberOfRating } = Product;
     return (
         <div>
             <Link href={`/pages/product/${id}`}>

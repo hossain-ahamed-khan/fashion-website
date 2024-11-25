@@ -10,7 +10,7 @@ const ProductReview = () => {
                 <a role="tab" className="tab">Discussion</a>
             </div>
 
-            <div className="flex-none md:flex-row-reverse">
+            <div className="flex-none md:flex md:flex-row-reverse">
                 <div className="w-full md:w-2/5 mt-10 p-10 space-y-5">
                     <div className="flex gap-2">
                         <p className="font-semibold">Product Review</p>

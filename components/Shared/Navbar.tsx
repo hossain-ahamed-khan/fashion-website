@@ -3,9 +3,10 @@ import logo from '../../public/images/logo.png';
 import { CiSearch } from 'react-icons/ci';
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { FaRegUser } from 'react-icons/fa';
+import Link from 'next/link';
 
 const navLinks = <>
-    <li><a className='hover:text-[#581FC1]'>Home</a></li>
+    <li><Link href="/" className='hover:text-[#581FC1]'>Home</Link></li>
     <li><a className='hover:text-[#581FC1]'>Shop</a></li>
     <li><a className='hover:text-[#581FC1]'>Deals</a></li>
     <li><a className='hover:text-[#581FC1]'>What's New</a></li>
