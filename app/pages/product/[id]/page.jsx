@@ -1,4 +1,3 @@
-import { IoBagOutline } from "react-icons/io5";
 import ProductBanner from "../../../../components/ProductDetails/ProductBanner";
 import ProductReview from "../../../../components/ProductDetails/ProductReview";
 

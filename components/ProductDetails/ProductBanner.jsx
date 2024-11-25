@@ -9,7 +9,7 @@ const ProductBanner = () => {
             <div className='w-11/12 mx-auto py-5'>
                 <h3>Feature Product / <span className='text-[#7E53D4]'>New Arrival</span></h3>
 
-                <div className='flex-none md:flex'>
+                <div className='flex-none md:flex '>
                     <div className='w-full md:w-1/2'>
                         <div className="p-5">
                             <Image
@@ -21,7 +21,7 @@ const ProductBanner = () => {
                         </div>
 
                     </div>
-                    <div className='w-full md:w-1/2'>
+                    <div className='w-full md:w-1/2 space-y-6'>
                         <button className="btn bg-[#452685] px-10 text-white border-none hover:bg-[#5d33b1]">New Arrival</button>
                         <h1 className="my-4 text-3xl font-semibold">White Hoodie</h1>
                         <div className='flex space-x-3'>
@@ -45,7 +45,7 @@ const ProductBanner = () => {
                             </div>
                         </div>
                         <hr />
-                        <div className="flex my-4">
+                        <div className="flex-none md:flex my-4">
                             <div className="w-1/2">
                                 <p className="text-xl font-semibold">Available Size</p>
                                 <div className="space-x-2 my-3">
@@ -82,15 +82,15 @@ const ProductBanner = () => {
                         <hr />
                         <div className="my-2">
                             <p className="font-bold text-xl mb-2">Quantity</p>
-                            <div className="w-28 bg-[#ECE9FE] rounded-2xl flex justify-around p-1">
+                            <div className="w-32 bg-[#ECE9FE] rounded-2xl flex justify-around p-3 space-x-5">
                                 <button>-</button>
                                 <span>1</span>
                                 <button>+</button>
                             </div>
                         </div>
-                        <div className="my-4 space-x-1">
-                            <button className="btn bg-[#7E53D4] w-72 text-white border-none">Buy Now</button>
-                            <button className="btn w-72 border-2 border-[#7E53D4] btn-outline text-[#7E53D4]">Add to Cart</button>
+                        <div className="my-4 space-x-0 md:space-x-2 space-y-3 md:space-y-0">
+                            <button className="btn bg-[#7E53D4] hover:bg-[#6a3ac9] w-full md:w-72 text-white border-none">Buy Now</button>
+                            <button className="btn w-full md:w-72 border-2 border-[#7E53D4] btn-outline text-[#7E53D4]">Add to Cart</button>
                         </div>
                     </div>
                 </div>
